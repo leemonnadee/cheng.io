@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/7cf05eb173.js" crossorigin="anonymous"></script>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+  <title>Cheng</title>
+</head>
+<body>
+  <section id="particleBackground">
+    <div id="particles-js"></div>
+<div class="main">
+  <h1>To future <span id="typewriter"></span></h1>
+ 
+
+  <a href="#firstContent" class="StartButton">
+    Claim now
+    <i id="btn_Icon" class="fa-sharp fa-solid fa-syringe fa-rotate-270 fa-lg" style="color: #650d0d;"></i>
+  </a>
+
+</div>
+</section>
+
+<section id="firstContent">
+
+  <form onsubmit="calculateDaysSinceBirthdate(event)">
+    <div class="borthImage">
+      <img class="imageTop" src="./src/bday.png" alt="">
+    </div>
+    <div class="firstContent-main">
+      <h2 class="bday">Your Birth Date:</h2>
+      <input class="textInput" id="month" type="text" placeholder="Month" required>
+      <input class="textInput" id="date" type="text" placeholder="Date" required>
+      <input class="textInput" id="year" type="text" placeholder="Year" required>
+    </div>
+    <div class="button_bd">
+      <button id="goButton" type="submit" class="btn_Main disabled">Go>></button>
+    </div>
+  </form>
+</section>
+<section id="secondContent">
+  <div class="container">
+      <div class="secContainer">
+        <div class="calendar">
+            <div class="header">weekday</div>
+            <div class="body">00</div>
+            <div class="footer">0000</div>
+        </div>
+        <div class="mainbody">
+        <h1 id="result1">
+          <span id="typewriter1"></span> 
+        </h1>
+        <div class="btnOne">
+        <a href="#thirdContent" class="StartButton" id="firstButton">
+          More...
+        </a>
+      </div>
+   
+      </div>
+      </div>
+      </div>
+    </section>
+    <section id="thirdContent">
+      <div class="secContainer">
+        <div class="borthImage">
+          <img id="handHeartImg" src="./src/handHeart.png" alt="">
+        </div>
+    
+        <div class="mainbody1">
+          <div class="headTextBot">
+          <h1 id="bottomText">since you were born......</h1>
+        </div>
+          <h1 class="result2">
+            Your heart has beaten about <span id="heartBeat"></span> and pumped <span id="boodPump"></span> L of blood.
+          </h1>
+          <a href="#fourthContent" class="StartButton">
+            More...
+           </a>
+        </div>
+
+      </div>
+      </section>
+
+      <section id="fourthContent">
+      <div class="secContainer">
+        <div class="borthImage">
+          <img id="idTube" src="./src/polar-blood-test-tube.gif" alt="">
+        </div>
+          <h1 class="result2">
+            Your body has produced <span id="bloodCells"></span> red blood cells.
+          </h1>
+          <a href="#fifthContent" class="StartButton">
+            More... </a>
+      </div>
+      </section>
+      <section id="fifthContent" class=".breathing-background">
+      <div class="secContainer">
+    
+          <img id="breath" src="./src/breath.gif" alt="">
+        
+        <h1 class="result2">
+          You've taken about <span id="breathsCount"></span> breaths.
+        </h1>
+        <a href="#SixthContent" class="StartButton">
+          More...</a>
+    </div>
+  </section>
+
+  <section id="SixthContent">
+    <div class="secContainer">
+      <img id="breath" src="./src/blink.gif" alt="">
+      <h1 class="result2">
+        You've blinked about <span id="blinksCount"></span>   times.
+      </h1>
+      <a href="#SeventhContent" class="StartButton">
+        More...</a>
+  </div>
+  </section>
+
+  <section id="SeventhContent">
+  <div class="secContainer">
+    <div class="imgBg">
+    <img id="breath" src="./src/sleep.png" alt="">
+  </div>
+    <h1 class="result2">
+      You've spent <span id="daysAsleepCount"></span> days of your life asleep.
+    </h1>
+    <a href="#eightContent" class="StartButton" id="sleepBtn">
+      More... </a>
+</div>
+
+</section>
+
+<section id="eightContent">
+  <div class="mainContainerEight">
+  <div class="header-eight"><p class="headText">Some days will be <span id="wRiterHead" style="color: green;font-weight: 500;"></span>, <br>
+ 
+    while most will have a bit of everything.<br> What you must remember, no matter how today unfolds, <br>
+    is that you are worthy and wonderful just as you are.
+ 
+  </p>
+  <p class="auth">@newhappyco</p>
+<div class="next"><a href="">next</a></div>
+</div>
+ 
+  <div class="footer-eight"></div>
+</div>
+</section>
+
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+ <script src="/app.js"></script>
+ <script src="/particles.js"></script>
+ <script src="/particleApp.js"></script>
+</body>
+</html>

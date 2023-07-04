@@ -1,0 +1,656 @@
+html,
+body{
+  padding: 0%;
+  margin: 0%;
+  scroll-behavior: smooth;
+  background-color: #e8e8e8;
+  overflow: hidden;
+  cursor:default;
+  -webkit-touch-callout: none; /* Disable touch callout on iOS Safari */
+  -webkit-user-select: none; /* Disable text selection on iOS Safari */
+  -khtml-user-select: none; /* Disable text selection on Konqueror HTML */
+  -moz-user-select: none; /* Disable text selection on Firefox */
+  -ms-user-select: none; /* Disable text selection on Internet Explorer/Edge */
+  user-select: none; 
+}
+#firstButton{
+  display: none;
+  width: 100px;
+ 
+}
+.btnOne{
+
+  display: flex;
+  justify-content: center;
+}
+.StartButton {
+  border-radius: 10px;
+  border: 5px solid #FF6150;
+  padding: 10px;
+  color: #FF6150;
+  font-size: 20px;
+  font-weight: 700;
+  display: inline-block;
+  text-decoration: none;
+  box-shadow:  -5px 5px 0px #e35647,
+  5px -5px 0px #ff6c59;
+  color: #8a342b;
+  opacity: 0.4;
+  transition: all ease-in-out 0.8s;
+
+}
+
+
+
+.StartButton:hover{
+  border-radius: 10px;
+  background: #FF6150;
+  box-shadow:  -5px 5px 0px #e35647,
+               5px -5px 0px #ff6c59;
+               color: #8a342b;
+               opacity: 1;        
+        
+}
+
+section{
+  height: 100vh;
+  width: 100%;
+  background-color: #e8e8e8;
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#particleBackground {
+  position: relative;
+  height: 100vh; /* Set the height to 100% of the viewport height */
+  width: 100%; /* Set the width to 100% of the viewport width */
+  overflow: hidden;
+}
+.borthImage{
+
+  height: 300px; width: 100%;
+  padding-left: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .imageTop{
+    height: 300px;
+    width: 200px;
+
+  }
+  .bornImg{
+    height: 300px;
+    width: 300px;
+  }
+}
+
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  border-radius: 10px;
+  width: 400px;
+  flex-direction: column;
+  background-color:#e8e8e8;
+
+  font-size: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: black;
+  z-index:9999
+
+  
+ 
+}
+#home{
+  overflow: hidden;
+ 
+}
+#firstContent{
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .textInput {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #555;
+    padding: 10px;
+    width: 50px;
+    text-align: center;
+    outline: none;
+  }
+  .button_bd{
+    width: 100%;
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+
+  .btn_Main{
+
+  border-radius: 10px;
+  border: 5px solid #FF6150;
+  padding: 5px;
+  color: #FF6150;
+  font-size: 20px;
+  font-weight: 700;
+  width: 100%;
+  display: inline-block;
+  text-decoration: none;
+  box-shadow:  -5px 5px 0px #e35647,
+  5px -5px 0px #ff6c59;
+  color: #8a342b;
+  opacity: 0.4;
+  transition: all ease-in-out 0.8s;
+
+    }
+    .btn_Main:hover{
+      border-radius: 10px;
+      background: #FF6150;
+      box-shadow:  -5px 5px 0px #e35647,
+                   5px -5px 0px #ff6c59;
+                   color: #8a342b;
+                   opacity: 1;        
+            
+    }
+  
+  }
+  .textInput:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  
+}
+.text{
+
+  height: 90px;
+ 
+  color: #FF6150;
+  font-size: 20px;
+  font-weight: 700;
+  color: #FF6150;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 2em;
+
+}
+
+#secondContent {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.container {
+  height: 100%;
+  overflow-y: scroll;
+  width: 100%;
+  padding: 5px;
+}
+
+.secContainer {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+  #breath{
+    height: 100px;
+    width: 200px;
+  }
+ 
+}
+.mainbody1{
+  display: none;
+  text-align: center;
+}
+/* Hide the scrollbar on the left side */
+.container::-webkit-scrollbar {
+  width: 0;  /* Set the width to 0 */
+}
+
+/* Optional: Customize the scrollbar track */
+.container::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* Optional: Customize the scrollbar thumb */
+.container::-webkit-scrollbar-thumb {
+  background-color: #8a342b;
+}
+
+#result1 {
+  color: #181918;
+  text-align: center;
+}
+
+.result2{
+  color: #181918;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 100;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  #heartBeat{
+    color: #a30808;
+    font-weight: 600;
+
+  }
+  #boodPump{
+    color: #a30808;
+    font-weight: 600;
+
+  }
+  #bloodCells{
+    color: #EE442B;
+    font-weight: 600;
+ 
+  }
+  #breathsCount{
+    color: #1D2445;
+    font-weight: 600;
+
+  }
+  #blinksCount{
+    
+    color: #0F1677;
+    font-weight: 600;
+
+  }
+  #daysAsleepCount{
+    color: #D6AC68;
+    font-weight: 600;
+
+  }
+}
+.bday{
+  color: #FF6150;
+ 
+  text-align: center;
+  animation: bounce infinite; /* referring directly to the animation's @keyframe declaration */
+  animation-duration:  2s  ;
+}
+
+
+#typewriter1 {
+  font-size: 30px;
+  font-weight: 100;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#bottomText{
+  font-size: 25px;
+  font-weight: 100;
+  text-align: center;
+  color: rgb(118, 54, 54);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  opacity: 0.7;
+  text-align: left;
+  animation: fadeIn;
+  animation-duration: 5s;
+}
+.bottomBorn{
+  display: flex;
+  justify-content: left;
+  width: 80%;
+}
+
+.calendar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid black;
+  height: 200px;
+  width: 200px;
+  text-align: center;
+  border-radius: 5px;
+  .header{
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: #FF6150;
+    font-size: large;
+    font-weight: 600;
+    color: #e8e8e8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  #particles-js{
+    background-color: red;
+  }
+  .body{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+    height: 50%;
+    font-size: 50px;
+  
+   
+  }
+  .footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    font-weight: 400;
+ 
+  }
+}
+
+
+#bloodBackground {
+  position: relative;
+  overflow: hidden;
+}
+
+.blood-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #8b0000, #ff0000);
+  animation: bloodFlow 10s linear infinite;
+}
+
+@keyframes bloodFlow {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 1000px;
+  }
+}
+
+#handHeartImg{
+  background-image: transparent;
+  animation: heartBeat 1s infinite;
+}
+
+#fifthContent {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: transparent;
+  z-index: 0;
+}
+
+#fifthContent::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, #00aaff 30%, transparent 70%);
+  opacity: 0.1;
+  animation: pulse-circles 4s infinite;
+}
+
+@keyframes pulse-circles {
+  0% {
+    transform: translate(-50%, -50%) scale(0.2);
+    opacity: 0.2;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.2;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(0.2);
+    opacity: 0.5;
+  }
+}
+
+
+#SixthContent {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  animation: blink 4s infinite;
+}
+
+@keyframes blink {
+  0% {
+    background-color: black;
+ 
+  }
+  50% {
+    background-color: transparent;
+    color: red;
+  }
+  100% {
+    background-color: black;
+  }
+}
+
+#SeventhContent {
+  background-color: #e8e8e8;
+  color: #181918;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 100;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  animation: nightAnimation 10s linear infinite;
+}
+
+@keyframes nightAnimation {
+  0% {
+    background-color: #e8e8e8;
+    color: #181918;
+  }
+  40% {
+    background-color: #e8e8e8;
+    color: #181918;
+  }
+  50% {
+    background-color: #000000;
+    color: rgb(212, 212, 108);
+  }
+  60% {
+    background-color: #000000;
+    color: rgb(212, 212, 108);
+  }
+  70% {
+    background-color: #000000;
+    color: rgb(212, 212, 108);
+  }
+  80% {
+    background-color: #000000;
+    color: rgb(212, 212, 108);
+  }
+  90% {
+    background-color: #000000;
+    color: rgb(212, 212, 108);
+  }
+  100% {
+    background-color: #e8e8e8;
+    color: #181918;
+  }
+}
+#eightContent{
+  flex-direction: column;
+ 
+  .mainContainerEight{
+    width: 80%;
+    padding: 20px;
+    font-size: large;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    .next{
+      width:95%;
+
+      display: flex;
+      justify-content: center;
+      
+    }
+    .auth{font-size: 15px;
+      color: #917e7e;text-align: end;
+
+
+      width: 90%;
+    }
+  }
+.header-eight{
+
+  background: #e0e0e0;
+  box-shadow:  16px 16px 23px #bcbcbc,
+               -16px -16px 23px #ffffff;
+  padding: 15px;
+  width: 40%;
+ .headText{
+  color: rgb(65, 4, 4);
+  text-align: left;
+  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+}
+
+
+}
+
+#thirdContent{
+  .secContainer {
+    height: 100vh;
+    width: 100%;
+    background-color: #e6bebe;
+    animation: heartbeat 1s linear infinite;
+  }
+  
+  
+
+  .mainbody1{
+   
+
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    .result2{
+      font-size: 25px;
+    }
+    .headTextBot{
+      height: fit-content;
+      width: 90%;
+
+    }
+  }
+}
+
+
+@keyframes heartbeat {
+  0% {
+    background-color: #e6bebe;
+  }
+  50% {
+    background-color: #f1f1f1;
+  }
+  100% {
+    background-color: #e6bebe;
+  }
+}
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+ .result2 {
+    font-size: 24px;
+   
+
+  }
+  .StartButton{
+    border-radius: 10px;
+    border: 3px solid #FF6150;
+    padding: 10px;
+    color: #FF6150;
+    font-size: 24px;
+    font-weight: 200;
+    display: inline-block;
+    text-decoration: none;
+    box-shadow:  -5px 5px 0px #e35647,
+    5px -5px 0px #ff6c59;
+    color: #8a342b;
+    opacity: 0.4;
+    z-index: 9999;
+    transition: all ease-in-out 0.8s;
+  }
+}
+
+
+
+
+
+
+#fourthContent{
+  .borthImage{
+  
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #idTube{
+   animation: shakeX infinite; /* referring directly to the animation's @keyframe declaration */
+  animation-duration:  1s ;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Media query for even smaller screens */
+@media (max-width: 480px) {
+  .result2 {
+    font-size: 20px;
+  
+  }
+  .StartButton{
+    border-radius: 10px;
+    border: 2px solid #FF6150;
+    padding: 8px;
+    color: #FF6150;
+    font-size: 16px;
+    font-weight: 100;
+    display: inline-block;
+    text-decoration: none;
+    box-shadow:  -5px 5px 0px #e35647,
+    5px -5px 0px #ff6c59;
+    color: #8a342b;
+    opacity: 0.4;
+    transition: all ease-in-out 0.8s;
+  }
+}
